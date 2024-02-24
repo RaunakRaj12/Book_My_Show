@@ -1,11 +1,11 @@
 /* Here note that ki this is those seats when we build new theater mtlb ye ki jb theater pahili baar bna hua hai toh this is how my theater looks like */
 /* it is like 2D matrix */
 
-
 package com.example.Book_my_show_backend.Models;
 
+import javax.persistence.*;
 import com.example.Book_my_show_backend.Enums.SeatType;
-import jakarta.persistence.*;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,10 +22,10 @@ public class TheaterSeatEntity {
     private int id ;
 
     // here we remove column properties
-    private String seatNo;
+    private String seat_no;
 
     @Enumerated(value = EnumType.STRING)
-    private SeatType seatType;
+    private SeatType seat_type;
 
     private int rate ;
 
@@ -35,8 +35,8 @@ public class TheaterSeatEntity {
 
     //Creating a constructor
     public TheaterSeatEntity(String seatNo,SeatType seatType,int rate){
-        this.seatNo = seatNo;
-        this.seatType = seatType;
+        this.seat_no = seatNo;
+        this.seat_type = seatType;
         this.rate = rate;
     }
 }

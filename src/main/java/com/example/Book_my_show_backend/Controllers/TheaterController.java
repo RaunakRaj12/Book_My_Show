@@ -18,8 +18,10 @@ public class TheaterController {
 
     @PostMapping("/add")
     public String addTheater(@RequestBody TheaterRequestDto theaterRequestDto){
-
-
         return theaterService.createTheater(theaterRequestDto);
     }
+
+    // get theater by theaterId
+
+    // Get all theaters by Dto
 }

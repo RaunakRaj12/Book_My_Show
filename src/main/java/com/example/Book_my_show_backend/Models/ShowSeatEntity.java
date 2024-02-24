@@ -1,13 +1,22 @@
 package com.example.Book_my_show_backend.Models;
 
 import com.example.Book_my_show_backend.Enums.SeatType;
-import jakarta.persistence.*;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
 import java.util.Date;
 
 
 @Entity
 @Table(name = "shows_seats")
+@Builder
+@AllArgsConstructor
+@Data
+@NoArgsConstructor
 public class ShowSeatEntity {
 
     @Id
@@ -18,6 +27,7 @@ public class ShowSeatEntity {
 
     @Enumerated(value = EnumType.STRING)
     private SeatType seatType;
+
 
     private boolean booked;
 

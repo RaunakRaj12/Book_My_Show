@@ -1,11 +1,12 @@
 package com.example.Book_my_show_backend.Models;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -30,8 +31,6 @@ public class TheaterEntity {
     // list of shows
     @OneToMany(mappedBy = "theater",cascade = CascadeType.ALL)
     List<ShowEntity> listOfShows ;
-
-
 
     // List of TheaterSeats
     @OneToMany(mappedBy="theater" , cascade = CascadeType.ALL)
