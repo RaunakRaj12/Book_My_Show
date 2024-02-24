@@ -7,7 +7,6 @@ According to Availability.
 
 Schema
 -----------------------------------------------------------------------------
-Backend Project Using SpringBoot, Maven, JPA Hibernate(MySQL), SQL where a user Can Book Ticket, book Show, Search Movies, Theaters And Can book Seats According to Availability.
 
 There is 3 ways to do the ui part aur
 ==============================
