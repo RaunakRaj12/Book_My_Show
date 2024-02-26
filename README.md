@@ -8,6 +8,9 @@ According to Availability.
 Schema
 -----------------------------------------------------------------------------
 
+![Schema](https://github.com/RaunakRaj12/Book_My_Show/assets/141065263/c2736789-2081-49ae-a4d2-c96c752523e4)
+
+
 There is 3 ways to do the ui part aur
 ==============================
   --Post man 
